@@ -18,14 +18,14 @@ public class EchoServer {
     }
 
     public static void main(String[] args) throws Exception {
-        if(args.length != 1){
+       /* if(args.length != 1){
             System.err.println("Usage:"+EchoServer.class.getSimpleName()
             +"<port>");
-            return;
-        }
-        int port = Integer.parseInt(args[0]);//1
+            System.exit(1);;
+        }*/
+       //int  port = Integer.parseInt(args[0]);//1
         //呼叫服务器的start方法
-        new EchoServer(port).start();
+        new EchoServer(9876).start();
     }
 
     public void start() throws Exception{
