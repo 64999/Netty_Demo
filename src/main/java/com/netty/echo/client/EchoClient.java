@@ -50,12 +50,12 @@ public class EchoClient {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 2){
+        /*if (args.length != 2){
             System.err.println("Usage :"+EchoClient.class.getSimpleName()+"<host><port>");
             return;
-        }
-        final String host = args[0];
-        final int port = Integer.valueOf(args[1]);
+        }*/
+        final String host = "127.0.0.1";
+        final int port = 9876;
         new EchoClient(host,port).start();
     }
 }
